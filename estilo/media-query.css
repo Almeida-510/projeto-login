@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    section.infos{
+        display: flex;
+        align-items: center;
+        max-width: 700px;
+    }
+    div.imagem-card{
+        border-radius: 20px 0px 0px 20px;
+        height: 100%;
+        width: 30vw;
+        max-width: 260px;
+    }
+     form{
+        margin: auto;
+    }
+    input{
+        width: 30vw;
+        max-width: 300px;
+    }
+}

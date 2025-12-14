@@ -25,88 +25,88 @@ body{
     background-image: linear-gradient(to bottom, var(--color03),var(--color05));
 }
 main{
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     height: 100vh;
-    width: 90vw;
+    width: 100vw;
 }
-#login{
-    background-color: var(--color02);
-    height: 65vh;
-    width: 90vw;
+section.infos{
     color: white;
+    background-color: #038C73;
+    height: 65vh;
+    width: 75vw;
     border-radius: 20px;
-    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.241);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.093);
 }
-#imagem{
-    background:url(../imagens/pattern-login.jpg) no-repeat;
+form > h1{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-weight: 200;
+    font-size: 2em;
+}
+form > p{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 1em;
+    font-weight: 300;
+    font-style: italic;
+}
+div.imagem-card{
+    background-image: url(../imagens/pattern-login.jpg);
+    background-position: center center;
     background-size: cover;
     height: 25vh;
     border-radius: 20px 20px 0px 0px;
 }
-#form{
-    display: block;
-    margin: auto;
-    padding: 20px;
-}
-#form > h1{
-    font-family: var(--font-padrao);
-    font-weight: 300;
-    font-style: italic;
-    text-align: center;
-}
-#form > p {
-    font-family: var(--font-padrao);
-    font-weight: 300;
+form{
+    padding: 10px;
     text-align: center;
 }
 input{
-    display: block;
-    margin: auto;
-    height: 30px;
-    width: 60vw;
-    margin-top: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.297);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.347);
-    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px ;
+    height: 25px;
+    width: 60%;
 }
 input::placeholder{
     font-family: var(--font-padrao);
-    font-weight: 250;
+    font-weight:200;
+    color: rgba(0, 0, 0, 0.74);
     text-align: center;
 }
-#emailIcon{
-    background-color: var(--color03);
-    position: relative;
-    top: 9px;
-    padding: 2px;
-    border-radius: 100%;
-}
-#senhaIcon{
-    background-color: var(--color03);
-    position: relative;
-    top: 9px;
-    padding: 2px;
-    border-radius: 100%;
-}
-div#buttons{
-    margin-top: 20px;
-}
-button{
-    display: block;
-    height: 4vh;
-    width: 60vw;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 20px;
-    border: 1px solid transparent;
+input.enter{
+    color: white;
+    background-color: #065a4a9f;
     font-family: var(--font-padrao);
     font-weight: 300;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.347);
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.318);
+    border-radius: 20px;
 }
-#esqueceuSenha{
+input.enter:hover{
+    background-color: white;
+    color: black;
+}
+input.sub{
     color: white;
-    background-color: #01403486;
-    border: 1px solid rgba(255, 255, 255, 0.402);
+    background-color: #065a4a9f;
+    font-family: var(--font-padrao);
+    font-weight: 300;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.318);
+    border-radius: 20px;
+}
+input.sub:hover{
+    background-color: white;
+    color: black;
+}
+span{
+    position: relative;
+    top: 8px;
+    left: 2px;
+    background-color: #02735E;
+}
+p.button-content{
+    margin-top: 25px;
 }
