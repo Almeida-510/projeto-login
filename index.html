@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media_query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login"><!--display flex para imagens ficarem alinhadas lado a lado-->
+            <div id="imagem">
+         
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja Bem-Vindo(a)</p>
+                <form action="">
+                    <p id="inp1">
+                        <label for="iemail"><span class="material-symbols-outlined" id="emailIcon">boy</span></label>
+                        <input type="email" name="email" id="iemail" required  placeholder="E-mail" autocomplete="email">
+                    </p>
+                    <p id="inp2">
+                        <label for="isenha"><span class="material-symbols-outlined" id="senhaIcon">key</span></label>
+                        <input type="password" name="senha" id="isenha" required minlength="8" placeholder="Senha" autocomplete="off">
+                    </p>
+                        <div id="buttons">
+                            <button type="submit" id="entrar">Entrar</button>
+                            <button type="reset" id="esqueceuSenha">Esqueceu senha</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
